@@ -84,6 +84,7 @@ function App() {
 export default App;
 */
 
+/*
 import Item from "./components/Item";
 
 function App() {
@@ -97,11 +98,24 @@ function App() {
     backgroundColor: "cornsilk",
     margin: "auto",
   };
-  
+
   return (
     <div style={styleObj}>
       <Item name="iPad" price="50" />
       <Item name="Apple" price="1.25" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import SquareBox from "./components/SquareBox";
+
+function App() {
+  return (
+    <div>
+      <SquareBox height={100} width={200} />
     </div>
   );
 }
