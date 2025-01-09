@@ -1,3 +1,4 @@
+/*
 import "./App.css";
 import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
@@ -10,6 +11,19 @@ function App() {
       <FirstComponent />
 
       <SecondComponent />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import ThirdComponent from "./components/ThirdComponent";
+
+function App() {
+  return (
+    <div>
+      <ThirdComponent name="ajay" age="22" />
     </div>
   );
 }
