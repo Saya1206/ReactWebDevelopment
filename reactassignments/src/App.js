@@ -39,6 +39,7 @@ function App() {
 export default App;
 */
 
+/*
 import FavoriteFood from "./components/FavoriteFood.js";
 
 function App() {
@@ -47,6 +48,20 @@ function App() {
       style={{ backgroundColor: "aquamarine", color: "brown", padding: "6px" }}
     >
       <FavoriteFood food="Apple" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import ColorBox from "./components/ColorBox";
+
+function App() {
+  return (
+    <div>
+      <ColorBox color="pink" />
+      <ColorBox color="yellow" />
     </div>
   );
 }
