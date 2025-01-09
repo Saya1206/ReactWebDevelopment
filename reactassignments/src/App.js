@@ -70,12 +70,38 @@ function App() {
 export default App;
 */
 
+/*
 import Message from "./components/Message";
 
 function App() {
   return (
     <div>
       <Message text="Hello, React Component" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import Item from "./components/Item";
+
+function App() {
+
+  let styleObj = {
+    height: "100px",
+    width: "200px",
+    border: "2px solid grey",
+    borderRadius: "6px",
+    fontFamily: "monospace",
+    backgroundColor: "cornsilk",
+    margin: "auto",
+  };
+  
+  return (
+    <div style={styleObj}>
+      <Item name="iPad" price="50" />
+      <Item name="Apple" price="1.25" />
     </div>
   );
 }
