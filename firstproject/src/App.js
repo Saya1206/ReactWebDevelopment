@@ -32,12 +32,29 @@ function App() {
 export default App;
 */
 
+/*
 import FourthComponent from "./components/FourthComponent";
 
 function App() {
   return (
     <div>
       <FourthComponent name="swara" age="12" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import FifthComponent from "./components/FifthComponent";
+
+function App() {
+  let stu_name = "rahul";
+  let stu_marks = 78;
+
+  return (
+    <div>
+      <FifthComponent name={stu_name} marks={stu_marks} />
     </div>
   );
 }
