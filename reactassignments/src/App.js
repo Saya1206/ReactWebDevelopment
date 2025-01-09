@@ -55,6 +55,7 @@ function App() {
 export default App;
 */
 
+/*
 import ColorBox from "./components/ColorBox";
 
 function App() {
@@ -62,6 +63,19 @@ function App() {
     <div>
       <ColorBox color="pink" />
       <ColorBox color="yellow" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import Message from "./components/Message";
+
+function App() {
+  return (
+    <div>
+      <Message text="Hello, React Component" />
     </div>
   );
 }
