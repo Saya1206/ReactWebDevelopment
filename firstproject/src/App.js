@@ -46,6 +46,7 @@ function App() {
 export default App;
 */
 
+/*
 import FifthComponent from "./components/FifthComponent";
 
 function App() {
@@ -55,6 +56,26 @@ function App() {
   return (
     <div>
       <FifthComponent name={stu_name} marks={stu_marks} />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import SixthComponent from "./components/SixthComponent";
+
+function App() {
+  let obj = {
+    id: 101,
+    name: "sakshi",
+    age: 22,
+    city: "kolhapur",
+  };
+
+  return (
+    <div>
+      <SixthComponent objectPass={obj} />
     </div>
   );
 }
