@@ -13,6 +13,7 @@ function App() {
 export default App;
 */
 
+/*
 import ProfileCard from "./components/ProfileCard";
 
 function App() {
@@ -31,6 +32,21 @@ function App() {
   return (
     <div style={styleobj}>
       <ProfileCard name={name} age={age} location={location} />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import FavoriteFood from "./components/FavoriteFood.js";
+
+function App() {
+  return (
+    <div
+      style={{ backgroundColor: "aquamarine", color: "brown", padding: "6px" }}
+    >
+      <FavoriteFood food="Apple" />
     </div>
   );
 }
