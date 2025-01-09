@@ -110,12 +110,36 @@ function App() {
 export default App;
 */
 
+/*
 import SquareBox from "./components/SquareBox";
 
 function App() {
   return (
     <div>
       <SquareBox height={100} width={200} />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import TitleBox from "./components/TitleBox";
+
+function App() {
+  
+  let boxStyle = {
+    height: "100px",
+    width: "200px",
+    margin: "auto",
+    fontWeight: "bold",
+    backgroundColor: "cadetblue",
+    padding: "8px",
+  };
+
+  return (
+    <div style={boxStyle}>
+      <TitleBox title="This is bold & centered title box" />
     </div>
   );
 }
