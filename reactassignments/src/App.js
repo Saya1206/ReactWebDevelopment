@@ -124,6 +124,7 @@ function App() {
 export default App;
 */
 
+/*
 import TitleBox from "./components/TitleBox";
 
 function App() {
@@ -140,6 +141,20 @@ function App() {
   return (
     <div style={boxStyle}>
       <TitleBox title="This is bold & centered title box" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import Button from "./components/Button";
+
+function App() {
+  return (
+    <div>
+      <Button label="Submit" />
+      <Button label="Cancel" />
     </div>
   );
 }
