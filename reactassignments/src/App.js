@@ -148,6 +148,7 @@ function App() {
 export default App;
 */
 
+/*
 import Button from "./components/Button";
 
 function App() {
@@ -155,6 +156,29 @@ function App() {
     <div>
       <Button label="Submit" />
       <Button label="Cancel" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import Counter from "./components/Counter";
+
+function App() {
+  const styleObj = {
+    height: "200px",
+    width: "200px",
+    margin: "auto",
+    fontWeight:"bold",
+    backgroundColor: "bisque",
+    padding: "8px",
+  };
+
+  return (
+    <div style={styleObj}>
+      <Counter step={1} />
+      <Counter step={5} />
     </div>
   );
 }
