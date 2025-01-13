@@ -69,12 +69,26 @@ function App() {
 export default App;
 */
 
+/*
 import Switch from "./components/Switch";
 
 function App() {
   return (
     <div>
       <Switch userRole="guest" />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import FormInput from "./components/FormInput";
+
+function App() {
+  return (
+    <div>
+      <FormInput />
     </div>
   );
 }
