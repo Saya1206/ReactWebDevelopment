@@ -27,12 +27,26 @@ function App() {
 export default App;
 */
 
+/*
 import StudentState from "./components/StudentState";
 
 function App() {
   return (
     <div>
       <StudentState />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import SignUp from "./components/SignUp";
+
+function App() {
+  return (
+    <div>
+      <SignUp isLogin={true} />
     </div>
   );
 }
