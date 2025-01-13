@@ -41,12 +41,26 @@ function App() {
 export default App;
 */
 
+/*
 import SignUp from "./components/SignUp";
 
 function App() {
   return (
     <div>
       <SignUp isLogin={true} />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import LogicalOperator from "./components/LogicalOperator";
+
+function App() {
+  return (
+    <div>
+      <LogicalOperator />
     </div>
   );
 }
