@@ -55,12 +55,26 @@ function App() {
 export default App;
 */
 
+/*
 import LogicalOperator from "./components/LogicalOperator";
 
 function App() {
   return (
     <div>
       <LogicalOperator />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import Switch from "./components/Switch";
+
+function App() {
+  return (
+    <div>
+      <Switch userRole="guest" />
     </div>
   );
 }
