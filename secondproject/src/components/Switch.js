@@ -18,3 +18,18 @@ export default function Switch({ userRole }) {
 
   return <div>{message}</div>;
 }
+
+/*
+export default function Switch({ userRole }) {
+  switch (userRole) {
+    case "admin":
+      return <p>Welcome, Admin!</p>;
+
+    case "guest":
+      return <p>Welcome, Guest!</p>;
+
+    default:
+      return <p>Wrong Choice!</p>;
+  }
+}
+  */
