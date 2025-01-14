@@ -185,14 +185,28 @@ function App() {
 }
 
 export default App;
-*/ 
+*/
 
+/*
 import ToggleButton from "./components/ToggleButton";
 
 function App() {
   return (
     <div>
      <ToggleButton />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import FormInput from "./components/FormInput";
+
+function App() {
+  return (
+    <div>
+      <FormInput />
     </div>
   );
 }
