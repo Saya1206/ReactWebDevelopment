@@ -163,6 +163,7 @@ function App() {
 export default App;
 */
 
+/*
 import Counter from "./components/Counter";
 
 function App() {
@@ -179,6 +180,19 @@ function App() {
     <div style={styleObj}>
       <Counter step={1} />
       <Counter step={5} />
+    </div>
+  );
+}
+
+export default App;
+*/ 
+
+import ToggleButton from "./components/ToggleButton";
+
+function App() {
+  return (
+    <div>
+     <ToggleButton />
     </div>
   );
 }
