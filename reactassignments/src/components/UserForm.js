@@ -4,7 +4,9 @@ export default function UserForm() {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
 
-  function handleSubmit() {
+  function handleSubmit(event) {
+    event.preventDefault();
+
     if (!name.trim()) {
       alert("Please enter your name");
       return;
@@ -26,6 +28,7 @@ export default function UserForm() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          placeholder="Enter your name"
         />
 
         <br />
@@ -35,6 +38,7 @@ export default function UserForm() {
           type="number"
           value={age}
           onChange={(e) => setAge(e.target.value)}
+          placeholder="Enter your age"
         />
 
         <br />
