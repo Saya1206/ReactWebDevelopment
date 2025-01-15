@@ -97,12 +97,26 @@ function App() {
 export default App;
 */
 
+/*
 import FormWithDropdown from "./components/FormWithDropdown";
 
 function App() {
   return (
     <div>
       <FormWithDropdown />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import FormWithObjectState from "./components/FormWithObjectState";
+
+function App() {
+  return (
+    <div>
+      <FormWithObjectState />
     </div>
   );
 }
