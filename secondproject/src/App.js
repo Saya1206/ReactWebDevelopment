@@ -111,12 +111,26 @@ function App() {
 export default App;
 */
 
+/*
 import FormWithObjectState from "./components/FormWithObjectState";
 
 function App() {
   return (
     <div>
       <FormWithObjectState />
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import ArrayStateForm from "./components/ArrayStateForm";
+
+function App() {
+  return (
+    <div>
+      <ArrayStateForm />
     </div>
   );
 }
