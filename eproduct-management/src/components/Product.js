@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+/*
+//display data using cards
+
 export default function Product() {
   const [products, setProducts] = useState([]);
 
@@ -35,5 +38,34 @@ export default function Product() {
         ))}
       </div>
     </div>
+  );
+}
+  */
+
+//display data using list
+
+export default function Product() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => setData(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  return (
+    <>
+      <h1 className="text-center py-3">Products</h1>
+      <ul>
+        {data.map((d) => (
+          <div>
+            <li>{d.id}</li>
+            <p>{d.title}</p>
+            <p>{d.body}</p>
+          </div>
+        ))}
+      </ul>
+    </>
   );
 }
