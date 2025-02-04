@@ -42,6 +42,7 @@ export default function Product() {
 }
   */
 
+/*
 //display data using list
 
 export default function Product() {
@@ -66,6 +67,46 @@ export default function Product() {
           </div>
         ))}
       </ul>
+    </>
+  );
+}
+  */
+
+//display data using table
+
+export default function Product() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => setData(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  return (
+    <>
+      <h1 className="text-center py-3">Products</h1>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Body</th>
+          </tr>
+        </thead>
+
+        {data.map((d) => (
+          <tbody>
+            <tr>
+              <th scope="row">{d.id}</th>
+              <td>{d.title}</td>
+              <td>{d.body}</td>
+            </tr>
+          </tbody>
+        ))}
+      </table>
     </>
   );
 }
