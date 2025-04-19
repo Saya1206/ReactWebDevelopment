@@ -1,5 +1,15 @@
+import ClockHeading from "./components/ClockHeading";
+import ClockSlogan from "./components/ClockSlogan";
+import CurrentTime from "./components/CurrentTime";
+
 function App() {
-  return <div>clock</div>;
+  return (
+    <center>
+      <ClockHeading />
+      <ClockSlogan />
+      <CurrentTime />
+    </center>
+  );
 }
 
 export default App;
