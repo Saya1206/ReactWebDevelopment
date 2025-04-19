@@ -1,0 +1,18 @@
+.text-center h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 20px;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 50%;
+}
+
+.row-container {
+  margin: 10px;
+}
+
+.btn-container {
+  min-width: 80px;
+}
